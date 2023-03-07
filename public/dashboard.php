@@ -73,14 +73,15 @@ if (empty($userid)) {
     <div class="card">
         <div class="card-header bg-light cardheader-dark-bg d-flex justify-content-between px-4 py-3">
             <div>
-                <h5 class="card-title mb-0">Wala ako maisip</h5>
+                <h5 class="card-title mb-0">Computer Management</h5>
             </div>
             <div class="d-flex ">
-                <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" id="addSalaryModalButton"
-                    data-bs-target="#addSalary"> <i class="fa-solid fa-computer"></i> <span>Add Computer</span></button>
+                <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#addPC"> 
+                    <i class="fa-solid fa-computer"></i> <span>Add Computer</span>
+                </button>
 
-                    <button type="button" class="btn btn-secondary mx-2" data-bs-toggle="modal" id="addSalaryModalButton"
-                    data-bs-target="#addSalary"> <i class="fa-solid fa-plug-circle-xmark"></i> <span>Time Out All</span></button>
+                    <!-- <button type="button" class="btn btn-secondary mx-2" data-bs-toggle="modal" id="addSalaryModalButton"
+                    data-bs-target="#addSalary"> <i class="fa-solid fa-plug-circle-xmark"></i> <span>Time Out All</span></button> -->
             </div>
 
 

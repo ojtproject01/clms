@@ -7,7 +7,7 @@ class PC{
 
 
     public function fetchPCItems(){
-        $sql = "SELECT * FROM clms_pc";
+        $sql = "SELECT * FROM `clms_pc` AS PC LEFT JOIN (SELECT `srcode`, `lastname`, `firstname` FROM `clms_users`) AS USER ON PC.user_srcode = USER.srcode ORDER BY PC.pc_number ASC";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
         $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -26,6 +26,18 @@ class PC{
         $qry_total->execute();
         $res = $qry_total->fetchAll(PDO::FETCH_ASSOC);
         return $res;
+    }
+    
+    public function addPC(){
+        $sql = "INSERT INTO `clms_pc` (`pc_number`, `status`) VALUES (?, ?)";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute(array($this->pc_number, 'available'));
+        $stmt->closeCursor();
+        if($stmt){
+            return "Success";
+        }else{
+            return "Failed";
+        }
     }
 
 }

@@ -396,7 +396,3 @@ function deleteSalaryHistory(data) {
   }
   )
 }
-
-function test(data) {
-  console.log(data)
-}

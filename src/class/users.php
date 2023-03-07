@@ -43,5 +43,24 @@ class Users
             return "failed";
         }
     }
+
+    public function searchUser(){
+        $sqlQuery = "SELECT * 
+        FROM clms_users 
+        WHERE srcode = ?;
+        ";
+        $stmt = $this->conn->prepare($sqlQuery);
+        $stmt->execute(array($this->srcodeid));
+        $res = $stmt->fetch(PDO::FETCH_ASSOC);
+        $stmt->closeCursor();
+        $array = array();
+        if($res > 0){
+            array_push($array, $res);
+            echo json_encode($array);
+        }else{
+            echo json_encode($array);
+        }
+       
+    }
 }
 

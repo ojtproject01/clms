@@ -32,6 +32,7 @@ var updatedOneRecordFailed = 'Record failed to update!';
 //------------------ ADDED RECORD (success/ failed)-----------------------//
 var addedOneRecord = 'New record added successfully!';
 var addedOneRecordFailed = 'New record failed to add!';
+var addedFailed = 'Record failed to add!';
 
 //------------------ Download File-----------------------//
 var downloadedOneFile = 'New file downloaded!';

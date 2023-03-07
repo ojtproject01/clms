@@ -38,8 +38,17 @@ switch ($requestType) {
                         echo json_encode($res);
                     }
                     break;
+                
+                case "add_pc":
+                    $database = new Database();
+                    $db = $database->dbConnection();
+                    $item = new PC($db);
+                    $item->pc_number = $data->pc_number;
 
-                  
+                    if($res = $item->addPC()){
+                        echo $res;
+                    }
+                    break;
         }
         
         

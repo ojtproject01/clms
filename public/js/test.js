@@ -1,26 +1,12 @@
-// Select the button
-const btn = document.querySelector(".btn-toggle");
-// Select the theme preference from localStorage
-const currentTheme = localStorage.getItem("theme");
- 
-// If the current theme in localStorage is "dark"...
-if (currentTheme == "dark") {
-  // ...then use the .dark-theme class
-  document.body.classList.add("dark-theme");
-}
- 
-// Listen for a click on the button 
-btn.addEventListener("click", function() {
-  // Toggle the .dark-theme class on each click
-  document.body.classList.toggle("dark-theme");
-  
-  // Let's say the theme is equal to light
-  let theme = "light";
-  // If the body contains the .dark-theme class...
-  if (document.body.classList.contains("dark-theme")) {
-    // ...then let's make the theme dark
-    theme = "dark";
-  }
-  // Then save the choice in localStorage
-  localStorage.setItem("theme", theme);
-});
+// // Get the current time
+// const currentTime = moment();
+
+// // Subtract a specific time from the current time
+// const specificTime = moment('2023-03-07 08:00:00');
+// const timeDiff = moment.duration(currentTime.diff(specificTime));
+
+// // Get the time usage in hours and minutes
+// const hours = timeDiff.hours();
+// const minutes = timeDiff.minutes();
+
+// console.log(`${hours}h ${minutes}m`);
