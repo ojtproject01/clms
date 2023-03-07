@@ -1,5 +1,7 @@
 :root {
     --bs-primary: #0D6EFD;
+
+    --bs-success: #18A558;
 }
 
 .layout-navbar-fixed .layout-wrapper:not(.layout-horizontal) .layout-page:before {
@@ -365,6 +367,20 @@ button.list-group-item-primary.active {
     background-color: var(--bs-primary);
     border-color: var(--bs-primary);
     box-shadow: 0 .125rem .25rem 0 rgba(105, 108, 255, .4)
+}
+
+.btn-success {
+    color: #fff;
+    background-color: var(--bs-success);
+    border-color: var(--bs-success);
+    box-shadow: 0 .125rem .25rem 0 rgba(105, 255, 105, 0.4)
+}
+
+.btn-success:hover {
+    color: #fff !important;
+    background-color: #21B6A8 !important;
+    border-color: #21B6A8 !important;
+    transform: translateY(-1px) !important
 }
 
 .btn-primary:hover {

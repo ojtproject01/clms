@@ -207,6 +207,7 @@ $("#timeInButton").click(function (){
                     alertTopEnd(addedOneRecord, icon_success); //alert message
                     displayPC(); //update the display
                     count_pc();
+                    pcmanagementtable.ajax.reload();
                     $("#timein-firstname").val('');
                      $("#timein-lastname").val('');
                      $("#timein-department").val('');
@@ -259,6 +260,7 @@ function timeoutButtonClick(pc_id){
                         alertTopEnd(addedOneRecord, icon_success); //alert message
                         displayPC(); //update the display
                         count_pc();
+                        pcmanagementtable.ajax.reload();
                     }
 
                 },

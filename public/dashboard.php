@@ -76,12 +76,18 @@ if (empty($userid)) {
                 <h5 class="card-title mb-0">Computer Management</h5>
             </div>
             <div class="d-flex ">
-                <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#addPC"> 
+                <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#addPC">
                     <i class="fa-solid fa-computer"></i> <span>Add Computer</span>
                 </button>
 
-                    <!-- <button type="button" class="btn btn-secondary mx-2" data-bs-toggle="modal" id="addSalaryModalButton"
-                    data-bs-target="#addSalary"> <i class="fa-solid fa-plug-circle-xmark"></i> <span>Time Out All</span></button> -->
+                <button type="button" class="btn btn-secondary mx-2" data-bs-toggle="modal"
+                    data-bs-target="#timeOutAll"> <i class="fa-solid fa-plug-circle-xmark"></i> <span>Time Out
+                        All</span></button>
+
+                <button type="button" class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#PCManagement">
+                <i class="fa-solid fa-network-wired"></i> <span>PC Management</span>
+                </button>
+
             </div>
 
 

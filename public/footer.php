@@ -199,7 +199,7 @@
 <script src="js/custom/general.js"></script>
 <script src="js/custom/main.js"></script>
 <script src="js/dashboard.js"></script>
-<script src="js/salaryHistory.js"></script>
+<script src="js/pc-management.js"></script>
 <script src="js/manageSalary.js"></script>
 <script src="js/custom/darkmode.js"></script>
 <script src="js/custom/defaultvalue.js"></script>

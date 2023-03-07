@@ -26,7 +26,7 @@
     --bs-gray-50: rgb(67 89 113 / 28%);
     --bs-primary: #0D6EFD;
     --bs-secondary: #8592a3;
-    --bs-success: #71dd37;
+    --bs-success: #18A558;;
     --bs-info: #03c3ec;
     --bs-warning: #ffab00;
     --bs-danger: #ff3e1d;
@@ -482,8 +482,8 @@ body::-webkit-scrollbar-thumb:hover {
 .badge {
     display: inline-block;
     padding: 0.35em 0.65em;
-    font-size: .85em;
-    font-weight: 700;
+    font-size: 1em;
+    font-weight: 500;
     line-height: 1;
     color: #fff;
     text-align: center;
@@ -491,6 +491,19 @@ body::-webkit-scrollbar-thumb:hover {
     vertical-align: baseline;
     border-radius: 0.25rem;
 }
+
+.badge-primary{
+    background-color: var(--bs-primary);
+}
+
+.badge-success{
+    background-color: var(--bs-success);
+}
+
+.badge-danger{
+    background-color: var(--bs-danger);
+}
+
 
 
 

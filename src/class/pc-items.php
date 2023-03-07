@@ -40,4 +40,16 @@ class PC{
         }
     }
 
+    public function listPC(){
+        $sql = "SELECT * FROM `clms_pc`";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $stmt->closeCursor();
+       
+        if($stmt){
+            return $res;
+        }
+    }
+
 }

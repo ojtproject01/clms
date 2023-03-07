@@ -17,7 +17,7 @@ $requestType = $_SERVER["REQUEST_METHOD"];
 switch ($requestType) {
     case 'POST':
         $data = json_decode(file_get_contents('php://input'));
-        $mode = $data->mode;
+            $mode = $data->mode;
         switch($mode){
             case "display_pc":
                 $database = new Database();
@@ -49,6 +49,16 @@ switch ($requestType) {
                         echo $res;
                     }
                     break;
+                case "display_list":
+                        $database = new Database();
+                        $db = $database->dbConnection();
+                        $item = new PC($db);
+    
+                        if($res = $item->listPC()){
+                            echo json_encode($res);
+                        }
+                        break;
+                
         }
         
         
